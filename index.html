@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    *{
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+    }
+
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+        min-height: calc(100vh - 95px);
+    }
+    
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .above{
+        background-color: rgb(241, 233, 233);
+        border-bottom:1px solid #dadce0 ;
+        line-height: 10px;
+        padding: 15px 30px; 
+        opacity: 0.8;  
+    }
+
+    .above h3 {
+        color: rgba(0,0,0,.54);
+        font-size: 15px;
+    }
+
+    .below {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(241, 233, 233);
+        line-height: 50px;
+    }
+
+    .below ul,
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+    .below a,
+    nav a {
+        text-decoration: none;
+        display:inline;
+        padding: .5em;
+        color: black;
+        opacity: 0.80;
+        margin-left: 5px;
+        font-size: 13px;
+    }
+
+    .sign-in {
+        font-weight: bold;
+        font-size: 13px;
+        height: 30px;
+        border: 1px solid #4285f4;
+        background: #4285f4;
+        color: white;
+        cursor: pointer;
+        border-radius: 2px;
+        width: 70px;
+        margin-left: 10px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .logo-container {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .logo {
+        width: 272px;
+        margin: auto;
+    }
+
+    .search-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    .search {
+        border: 1px solid #e4e4e4;
+        width: 550px;
+        height: 30px;
+        border-radius: 20px;
+        padding: 5px 5px;
+        margin: auto;
+    }
+
+    .search:hover {
+        box-shadow: 50px;
+        color: rgb(82, 80, 80);
+    }
+
+    input {
+        line-height: 34px;
+        width: 436px;
+        padding: 6px 0px 0px 0px;
+        font-size: 16px;
+        border: none;
+        height: 30px;
+        outline: none;
+    }
+
+    .fa {
+        position: relative;
+        right: 463px;
+        opacity: 0.3;
+    }
+
+    .search .voice {
+        position: relative;
+        top: 5px;
+        left: 510px;
+        padding-left:13px;
+        border-left: 1px ridge rgb(182, 178, 178) ;
+        cursor: pointer;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button {
+        color: rgb(88, 80, 80);
+        margin-top: 25px;
+        margin-right: 10px;
+        padding: 0 15px;
+        height: 36px;
+        background-color: #f2f2f2;
+        border: 1px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        border: 1px solid #c6c6c6;
+    }     
+
+    .languages {
+        display: flex; 
+        justify-content: center;
+        margin-top: 30px;
+        font: 12px Arial;
+    }
+
+    .languages a {
+        text-decoration: none;
+    }
+
+    .languages a:link {
+        color:#1a0dab;
+    }
+
+    .languages a:visited {
+        color:#609;
+    }    
+
+</style>    
+<head>
+    <script src="https://kit.fontawesome.com/960bca8be7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="#">Gmail</a></li>
+                    <li><a href="#">Images</a></li>
+                    <i class="material-icons">apps</i>
+                    <button class="sign-in">Sign-in</button>
+                </ul>
+            </div>
+        </nav>
+        
+        
+            <div class="logo-container">
+                <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Googlo_logo">
+            </div>
+
+            <div class="search-container">
+                <div class="search">
+                    <img class="voice" height="20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1000px-Google_mic.svg.png">
+                    <input type="search" name="search-bar">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+    
+            <div class="button-container">   
+                <button class="button">Google Search</button>
+                <button class="button"> I'm Feeling Lucky</button>
+            </div>
+    
+               <div class="languages">
+                   <p>Google offered in:
+                      
+                        <span><a href="#">Hausa</a></span>
+                        <span><a href="#">Igbo</a></span>
+                        <span><a href="#">Yoruba</a></span>
+                        <span><a href="#">Ede</a></span>
+                        <span><a href="#">Nigerian Pidgin</a></span>
+                   </p>
+               </div>
+                   
+    </div>
+                   
+    <footer>
+        <div class="above">
+            <h3>Nigerian</h3>
+        </div>
+        <div class="below">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">How search works</a></li>
+                </ul>
+                
+                <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+                </ul>    
+        </div>
+    </footer>
+</body>
+</html>
